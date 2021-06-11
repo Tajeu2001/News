@@ -12,10 +12,10 @@ def index():
     return render_template('index.html',sources=sources)
 
 @main.route('/source/<source_id>')
-# def source(source_id):
-#     '''
-#     View source page function that returns a source page 
-#     '''
-#     title = f"{source_id} page"
-#     articles = get_articles(source_id)
-#     return render_template('articles.html', title=title, articles=articles)
+def source(source_id):
+    '''
+    View source page function that returns a source page 
+    '''
+    title = f"{source_id} page"
+    articles = get_articles(source_id)
+    return render_template('articles.html', title=title, articles=articles)
