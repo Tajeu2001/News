@@ -13,21 +13,21 @@ def configure_request(app):
 
 
 
-# def get_sources():
+def get_sources():
 
-#     get_source_url = source_url.format(api_key)
+    get_source_url = source_url.format(api_key)
 
-#     with urllib.request.urlopen(get_source_url) as url:
-#         get_source_data = url.read()
-#         get_source_response = json.loads(get_source_data)
+    with urllib.request.urlopen(get_source_url) as url:
+        get_source_data = url.read()
+        get_source_response = json.loads(get_source_data)
 
-#         sources_results = None
+        sources_results = None
 
-#         if get_source_response['sources']:
-#             source_results_list = get_source_response['sources']
-#             source_results = process_sources(source_results_list)
+        if get_source_response['sources']:
+            source_results_list = get_source_response['sources']
+            source_results = process_sources(source_results_list)
 
-#     return sources_results
+    return sources_results
 
 # def process_sources(source_list):
 #     '''
