@@ -1,5 +1,4 @@
-# Project
-News-Centre
+# News-Centre
 
 ## Author
 Rosemary Siantayo Tajeu
